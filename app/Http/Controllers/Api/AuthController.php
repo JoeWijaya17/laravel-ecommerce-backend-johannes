@@ -23,8 +23,6 @@ class AuthController extends Controller
             'city' => 'required|string',
             'district' => 'required|string',
             'postal_code' => 'required|string',
-            //'roles' => 'required|string|in:USER,SELLER',
-            'roles' => 'required|string|in:SELLER',
             'photo' => 'required|image|mimes:jpg,jpeg,png|max:2048',
         ]);
 
