@@ -12,7 +12,6 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'seller_id' => 'required|exists:users,id',
             'name' => 'required|string',
             'description' => 'required|string',
         ]);
